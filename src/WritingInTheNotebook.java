@@ -1,33 +1,33 @@
 
 
 /**
- * Класс, в котором хранится запись.
+ * The class in which to store the entry.
  */
 class WritingInTheNotebook {
     /**
-     * Строка, в которой хранится запись
+     * A string that holds the entry.
      */
     private String entry;
 
     /**
-     * Конструктор класса, добавляющий запись
-     * @param newEntry Строка, которая будет записана в класс
+     * The class constructor , adds an entry
+     * @param newEntry A string that will be written in class
      */
     WritingInTheNotebook(String newEntry) {
         entry = newEntry;
     }
 
     /**
-     * Метод, изменяющий старую запись
-     * @param newEntry Новая запись
+     * Changing old entry
+     * @param newEntry New entry
      */
     void setEntry(String newEntry) {
         entry = newEntry;
     }
 
     /**
-     * Метод возвращает запись
-     * @return Запись
+     * Return entry
+     * @return entry
      */
     String getEntry() {
         return entry;

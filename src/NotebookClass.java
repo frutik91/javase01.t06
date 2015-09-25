@@ -2,33 +2,33 @@ import java.util.ArrayList;
 import static java.lang.System.*;
 
 /**
- * Класс блокнота.
- * Позволяет создавать блокнот, добавлять, редактировать и удалять записи.
+ * Class notebook.
+ * Allows you to create notes , add, edit and delete records .
  */
 class NotebookClass {
     /**
-     * Список записей
+     * List of records
      */
     private ArrayList<WritingInTheNotebook> MyNotebook;
 
     /**
-     * Конструктор класса Блокнот.
+     * The class constructor Notepad.
      */
     public NotebookClass() {
         MyNotebook = new ArrayList<WritingInTheNotebook>();
     }
 
     /**
-     * Добавляет новую запись в блокнот.
+     * Adds a new entry in the notepad.
      *
-     * @param entry Текст записи.
+     * @param entry Entry text
      */
     public void addNewEntry(String entry) {
         MyNotebook.add(new WritingInTheNotebook(entry));
     }
 
     /**
-     * Выводит в консоль все записи из блокнота в пронумерованном виде.
+     * Displays the console all the entry from a notebook in a numbered form.
      */
     public void printAllEntry() {
         int i = 1;
@@ -39,10 +39,10 @@ class NotebookClass {
     }
 
     /**
-     * Изменяет уже существующую запись в блокноте.
+     * Modifies an existing entry in the notebook.
      *
-     * @param number Порядковый номер записи.
-     * @param entry  Новый текст записи.
+     * @param number The serial number of the entry.
+     * @param entry  New text entry.
      */
     public void editEntry(int number, String entry) {
         number--;
@@ -56,9 +56,9 @@ class NotebookClass {
     }
 
     /**
-     * Удаляет существующую запись из блокнота.
+     * Deletes an existing entry from the notebook .
      *
-     * @param number номер удаляемой записи.
+     * @param number number of entry deleted .
      */
     public void deleteEntry(int number) {
         number--;
